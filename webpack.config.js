@@ -20,8 +20,11 @@ module.exports = {
 			include: path.join(__dirname, 'views'),
 			query: {
 				presets: ['latest','react']
-			}
-			}],
+			}},
+ 			{ test: /\.scss?$/,
+        loader: 'style-loader!css-loader!sass-loader',
+        include: path.join(__dirname, 'views', 'styles') }
+        ],
 	},
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),

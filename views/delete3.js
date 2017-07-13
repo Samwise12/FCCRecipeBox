@@ -122,21 +122,15 @@ let w = update(this.state.finalArr, {
 });
 
 let length = this.state.recipes[clicked].ingredients.length;
-
-//console.log(w[0].props.children[0])
-console.log(recipe.ingredients)
+let greatArr = [];//for editing finalArr
 for (let j=0; j<length; j++ ) {
-  w[clicked].props.children[0][j] = <ul><li>{recipe.ingredients[j]}</li></ul>;
+  greatArr.push(w[0].props.children[0][j]);
 }
-for (let j=length; j<recipe.ingredients.length; j++ ) {
-  w[clicked].props.children[0][j] = <ul><li>{recipe.ingredients[j]}</li></ul>;
+for (let j=0; j<length; j++ ) {
+  w[clicked].props.children[0][j] = <ul><li>{recipe.ingredients[j]}</li></ul>
 }
-//console.log(recipe.ingredients.length-length)
-//console.log(this.state.finalArr[0].props.children[0])
-//console.log(w[0].props.children[0])
-//console.log(q[clicked].ingredients)
-console.log(recipe.ingredients)
-this.setState({finalArr: w, recipes: q, ingredientCount: q[clicked].ingredients.length }, () => {
+console.log(w[0].props.children[0])
+this.setState({finalArr: w, recipes: q}, () => {
 localStorage.setItem('recipes', JSON.stringify(this.state.recipes));  
 this.closeModal2()
 })

@@ -20,8 +20,13 @@
     "babel-loader": "^7.1.1",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.22.0",
+    "css-loader": "^0.28.4",
     "dotenv": "^4.0.0",
+    "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
     "webpack": "^3.0.0",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-dev-server": "^2.3.0",
@@ -30,7 +35,13 @@
   "dependencies": {
     "body-parser": "^1.16.0",
     "express": "^4.14.1",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "react-dom": "^15.4.2"
+    "react-addons-create-fragment": "^15.6.0",
+    "react-addons-update": "^15.6.0",
+    "react-collapsible": "^1.4.0",
+    "react-dom": "^15.4.2",
+    "react-modal": "^2.2.1"
   }
 }
